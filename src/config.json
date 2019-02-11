@@ -1,0 +1,19 @@
+{
+	"server_port": 5000,
+	"sequelize": {
+		"freeradius": {
+			"username": "root",
+			"password": "pihotspot",
+			"database": "radius",
+			"host": "127.0.0.1",
+			"dialect": "mysql",
+			"insecureAuth" : true,
+			"operatorsAliases": false
+		}
+	},
+	"register": {
+		"active": true,
+		"maxRegisterConsecutiveFails": 20,
+		"intervalRegisterConsecutiveFails": 60
+	}
+}

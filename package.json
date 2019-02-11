@@ -1,0 +1,28 @@
+{
+  "name": "@kupiki/portal-backend",
+  "version": "1.0.0",
+  "description": "Kupiki Hotspot Portal Backend",
+  "author": "Pi Home Server",
+  "homepage": "http://www.pihomeserver.fr",
+  "copyright": "Copyright",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets env,stage-0\"",
+    "build": "babel src -s -D -d dist --presets env,stage-0",
+    "start": "node dist"
+  },
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^4.13.3",
+    "radius": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.9.2"
+  }
+}
