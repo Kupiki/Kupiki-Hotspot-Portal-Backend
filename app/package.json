@@ -9,13 +9,13 @@
   "private": false,
   "scripts": {
     "dev": "nodemon -w src --exec \"babel-node src --presets env,stage-0\"",
-    "build": "babel src -s -D -d dist --presets env,stage-0",
-    "start": "node dist"
+    "start-docker": "nodemon -w /src/app/src --exec \"babel-node /src/app/src --presets env,stage-0\""
   },
   "dependencies": {
-    "dgram": "^1.0.1",
+    "body-parser": "^1.18.3",
     "express": "^4.13.3",
-    "radius": "^1.1.4"
+    "rate-limiter-flexible": "^0.22.3",
+    "sequelize": "^4.42.0"
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",

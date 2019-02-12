@@ -13,7 +13,7 @@
 	},
 	"register": {
 		"active": true,
-		"maxRegisterConsecutiveFails": 20,
+		"maxRegisterConsecutiveFails": 5,
 		"intervalRegisterConsecutiveFails": 60
 	}
 }

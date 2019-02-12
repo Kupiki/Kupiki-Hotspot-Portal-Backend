@@ -69,7 +69,7 @@ app.post('/register', function (req, res) {
 });
 
 dbFreeradius.sequelize.sync().then(
-	app.server.listen(process.env.PORT || config.server_port, () => {
+	app.server.listen(process.env.NODE_PORT || config.server_port, () => {
 		console.log(`Started on port ${app.server.address().port}`);
 	})
 );

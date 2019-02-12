@@ -1,0 +1,12 @@
+version: '2'
+services:
+  portal-backend:
+    build: .
+    command: npm run start-docker
+    volumes:
+      - "./app:/src/app"
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_PORT=5000
+    network_mode: "host"
